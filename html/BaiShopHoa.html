@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerBox 360</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .wrapper {
+            height: auto;
+            width: 960px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+        }
+        
+        header {
+            height: 150px;
+            width: 100%;
+            background-color: #ee6ed6;
+            position: relative;
+        }
+        
+        header img {
+            top: 20px;
+            left: 10px;
+            position: absolute;
+        }
+        
+        header h2 {
+            top: 20px;
+            left: 120px;
+            position: absolute;
+            color: white;
+        }
+        
+        header h4 {
+            top: 50px;
+            left: 120px;
+            position: absolute;
+            color: white;
+        }
+        
+        header #frm {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        header #frm #txts {
+            border: 1px solid gray;
+            padding: 2px;
+        }
+        
+        header #frm #btnS {
+            border: 1px solid gray;
+            padding: 2px;
+            border-radius: 50%;
+            background-color: cadetblue;
+        }
+        
+        nav {
+            position: absolute;
+            bottom: 3px;
+            right: 20px;
+        }
+        
+        .menu {
+            list-style-type: none;
+        }
+        
+        .menu li {
+            display: inline-block;
+            background-color: #576c85;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .menu li:hover {
+            background-color: #e673c3;
+        }
+        
+        .menu li a {
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+        
+        .menu li ul.sub-menu {
+            display: none;
+            background-color: #576c85;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+        .menu li:hover ul.sub-menu {
+            display: block;
+            left: 0px;
+            top: 51px;
+        }
+        
+        .menu li ul.sub-menu li {
+            width: 115px;
+        }
+        
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .product {
+            display: inline-block;
+            width: 240px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            transition: background-color 0.3s, border-color 0.3s;
+            cursor: pointer;
+        }
+        
+        .product:hover {background-color: #e9e9e9;
+            border-color: #b0b0b0;
+        }
+        
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        
+        .product h3 {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        
+        .product:hover h3 {
+            color: #ec5cbc;
+        }
+        
+        .product p.price {
+            font-size: 16px;
+            color: #d9534f;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .product:hover p.price {
+            color: #ff5733;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="https://png.pngtree.com/png-clipart/20230209/original/pngtree-cute-pink-purple-tulips-png-image_8950056.png" alt="Flower Image" height="100" width="80">
+            <h2>FlowerBox 360</h2>
+            <h4>...to get your daily dose of luxury roses!</h4>
+            <form action="" method="post" id="frm">
+                <input type="text" name="txts" id="txts" placeholder="Nhap" required>
+                <button type="submit" id="btnS">GO</button>
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Gift Baskets</a></li>
+                    <li><a href="#">Flowers Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Promotion</a></li>
+                            <li><a href="#">Gift Baskets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <a href="https://carrozaderosas.com/products/100-red-luxury">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_2279_Original.heic?v=1723473363&width=823" alt="Red Luxury Rose Bouquet">
+                    <h3>Red Luxury Rose Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/freestyle-bouquet">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_5868.jpg?v=1723400562&width=823" alt="White Rose Elegance">
+                    <h3>Freestyle Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/love-blooms-bouquet">
+                <section class="product"><img src="https://carrozaderosas.com/cdn/shop/files/IMG_2974.heic?v=1723473842&width=823" alt="Pink Passion Arrangement">
+                    <h3>Coqueta Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/fairy-pink-bouquet">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/FullSizeRender_Original.heic?v=1723473533&width=823" alt="Pink Passion Arrangement">
+                    <h3>Fairy Pink Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/sweetheart-bouquet">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_3727_Original.heic?v=1723478546&width=823" alt="Pink Passion Arrangement">
+                    <h3>Sweetheart Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/vase-arrangement">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_59232.jpg?v=1723399924&width=823" alt="Pink Passion Arrangement">
+                    <h3>Vase Arrangement</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/100-red-luxury">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_6422.heic?v=1723472431&width=823" alt="Pink Passion Arrangement">
+                    <h3>Classic Red Rose Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/fresita-bouquet">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_1671_Original.heic?v=1723473648&width=823" alt="Pink Passion Arrangement">
+                    <h3>Plush Bouquet</h3>
+                    <p class="price">$99.99</p>
+                </section>
+            </a>
+
+            <a href="https://carrozaderosas.com/products/princess-red-rose-bouquet">
+                <section class="product">
+                    <img src="https://carrozaderosas.com/cdn/shop/files/IMG_6516.jpg?v=1723478504&width=823">
+                    <h3>Princess Red Rose Bouquet</h3>
+                    <p class="price">$19.99</p>
+                </section>
+            </a>
+        </div>
+
+        <footer></footer>
+    </div>
+</body>
+
+</html>
